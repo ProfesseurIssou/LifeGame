@@ -12,7 +12,7 @@ SQUARE_SIZE = WINDOW_HEIGHT // BOARD_HEIGHT
 
 @njit
 def Process(board: np.ndarray) -> np.ndarray:
-    newBoard = np.zeros((BOARD_HEIGHT, BOARD_WIDTH), dtype=np.bool8)
+    newBoard: np.ndarray = np.zeros((BOARD_HEIGHT, BOARD_WIDTH), dtype=np.bool8)
     for i in range(BOARD_HEIGHT):
         for j in range(BOARD_WIDTH):
             neighbours = 0
